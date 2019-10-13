@@ -59,3 +59,12 @@ body {
   text-align: center;
 
 }
+
+/*************************** MAIN HOME PAGE **********************/
+.main-header {
+  min-height: calc(100vh - 120px);
+  background: url("http://www.coolentertainment.us/wp-content/uploads/2018/07/Highly-Advanced-Technology-Available-at-Samsung-TV-Zambia.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

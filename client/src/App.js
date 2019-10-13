@@ -5,6 +5,8 @@ function App() {
   return (
     <div>
    <Nav />
+   <header className="main-header">
+          </header>
     </div>
   );
 }
