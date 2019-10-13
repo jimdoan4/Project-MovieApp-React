@@ -112,3 +112,112 @@ body {
   text-decoration: underline !important;
   font-size: 18px !important;
 }
+
+
+/*************************** ALL BUTTONS **********************/
+.banner-btn {
+  padding: 1.5rem 4.7rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: var(--primaryColor);
+  color: var(--mainBlack);
+  border: 1px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  cursor: pointer;
+  border-radius: 24px;
+  margin-top: 90px;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  box-shadow: 1px 1px 1px 1px white;
+}
+
+.banner-btn:hover {
+  background: #e36056;
+  color: white;
+  border: 1px solid #e36056;
+}
+
+.back-button {
+  background-color: white;
+  color: black;
+  border: 2px solid black !important;
+  justify-content: center;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 5px;
+  border-radius: 3px;
+  margin-left: 30px;
+}
+
+.back-button:hover {
+  background-color: #e36056;
+  color: white;
+  box-shadow: 1px 3px 12px 0px #b3b3b3;
+}
+
+.info-button {
+  background-color: white;
+  color: black;
+  border: 2px solid black !important;
+  justify-content: center;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  margin-top: 30px !important;
+  font-size: 14px;
+}
+
+.info-button:hover {
+  background-color: #363130;
+  color: white;
+  box-shadow: 1px 3px 12px 0px #b3b3b3;
+
+}
+
+.search-btn {
+  padding: .2rem .1rem;
+  border: 2px solid black !important;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  font-size: 1.4rem;
+  font-weight: bold;
+  background: var(--primaryColor);
+  color: var(--mainBlack);
+  border: 1px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  margin-bottom: 40px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+#search-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
