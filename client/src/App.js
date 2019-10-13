@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Nav from "./components/Nav";
+import SearchContainer from "./components/SearchContainer";
 
 class App extends Component {
   render() {
@@ -9,7 +10,7 @@ class App extends Component {
         <div>
           <header className="main-header">
           </header>
-
+          <SearchContainer />
           <section id="order-section" style={{ marginTop: "280px;" }}>
             <div className="container text-center">
               <h4 className="order-title">New & Trending Videos</h4>
