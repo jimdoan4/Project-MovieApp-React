@@ -221,3 +221,25 @@ body {
   width: 100%;
   height: 2.5rem;
 }
+
+/*************************** RESULTS SECTION **********************/
+.Results {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Results_item {
+  width: 240px;
+}
+
+.Results_item_image {
+  height: 200px;
+}
+
+.Results_item_title {
+  white-space: wrap;
+}
+
+.Results_item_summary {
+  white-space: wrap;
+}
