@@ -18,15 +18,15 @@ class Results extends Component {
         <div
           key={index}
           style={{ height: "450px" }}
-          className="Results_item container-fluid col-md-3"
+          className="Results_item order-section container-fluid col-md-3"
         >
-          <div className="card ordering" style={{ height: "400px" }}>
+          <div className="card ordering" style={{ height: "380px" }}>
             <div className="icon-container">
               <img
                 className="Results_item_images order-picture"
                 src={show.image}
                 alt={show.name}
-                width="265px"
+                width="303px"
                 height="280px"
               />
               <div className="card-body">
