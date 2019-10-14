@@ -1,68 +1,46 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Popcorn Movie App
 
-## Available Scripts
+### Overview
+Popcorn Movie App is a search movie engine that allows user to type in any title and the search engine will populate all movies relevant to the title with detail information about that specific movie.
 
-In the project directory, you can run:
+### Project Links
 
-### `npm start`
+[Heroku](https://popcorn-movie-search.herokuapp.com/)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Technical Specifications
 
-### `npm test`
+This application has:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **Search option where user can search for movies and detail information about the movie will populate.
+* **Promises & Props** to help build more complex queries!
+* **Wireframes** that were designed during the planning process.
+* **User Stories**
+* **ERDs**
+* **Semantically clean HTML and CSS**
+* **Deployed online** and accessible to the public via Heroku
 
-### `npm run build`
+#### Image of the Front Page
+![Image of the Front Live Page](https://scontent.fatl1-2.fna.fbcdn.net/v/t1.0-9/72688854_10156878326989624_4938766577089642496_o.jpg?_nc_cat=107&_nc_oc=AQnuLqNzsgBX2IdHnLQ3R_080C6-uq7Sli8PF6MyyxgAzHx30itTR9ZKl6nVL6cN3dl7gn7m824rTf0s8AI6wpm0&_nc_ht=scontent.fatl1-2.fna&oh=9674572c3c0450ef079af4c7f1ac73af&oe=5E19A6B2)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+#### Technology Used
+- REACT
+- Axios
+- 3rd Party API
+- Mongoose
+- Express
+- Dotenv
+- Node.js
+- Morgan
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- VS Code
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Future Development
+- Add User Authentication
+- Add Animations
+- Add Sound effects
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
