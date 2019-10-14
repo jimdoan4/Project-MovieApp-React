@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-
+import { Card } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
 class Results extends Component {
   constructor(props) {
@@ -15,12 +16,12 @@ class Results extends Component {
     let { shows } = this.props;
     let results = shows.map((show, index) => {  // Looping through the list of items to show all of the shows requested
       return (
-        <div
+        <Col md={3}
           key={index}
           style={{ height: "450px" }}
-          className="Results_item order-section container-fluid col-md-3"
+          className="Results_item order-section container-fluid"
         >
-          <div className="card ordering" style={{ height: "380px" }}>
+          <Card className="ordering" style={{ height: "380px" }}>
             <div className="icon-container">
               <img
                 className="Results_item_images order-picture"
@@ -29,7 +30,7 @@ class Results extends Component {
                 width="303px"
                 height="280px"
               />
-              <div className="card-body">
+              <Card.Body>
                 <div className="dropdown">
                   <span className="info-button">Click here for more information</span>
                   <div className="dropdown-content text-center">
@@ -44,10 +45,10 @@ class Results extends Component {
                     </h4>
                   </div>
                 </div>
-              </div>
+              </Card.Body>
             </div>
-          </div>
-        </div>
+          </Card>
+        </Col>
       );
     });
 
