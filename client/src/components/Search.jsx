@@ -18,7 +18,7 @@ class Search extends Component {
 
   render() {
     return (
-      <div id="page-container" className="Search">
+      <div id="page-container">
         <div id="search-container">
           <form onSubmit={this.onSubmitQuery}>
             <input

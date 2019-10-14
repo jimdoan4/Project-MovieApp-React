@@ -12,22 +12,18 @@ const HomeContainer = styled.div`
     padding: 50px 0;
     font-family: "muse-500", Arial, sans-serif;
   }
-
   .new-section {
     padding: 50px 0;
     font-family: "muse-500", Arial, sans-serif;
   }
-
   .scary-section {
     padding: 50px 0;
     font-family: "muse-500", Arial, sans-serif;
   }
-
   .kids-section {
     padding: 50px 0;
     font-family: "muse-500", Arial, sans-serif;
   }
-
   .section-title {
     text-align: left;
     color: black;
@@ -39,9 +35,9 @@ const HomeContainer = styled.div`
 class App extends Component {
   render() {
     return (
-      <HomeContainer>
+      <div>
         <Nav />
-        <div>
+        <HomeContainer>
           <header className="main-header"></header>
           <SearchContainer />
           <div className="trending-section" style={{ marginTop: "280px;" }}>
@@ -330,8 +326,8 @@ class App extends Component {
               </Row>
             </Container>
           </div>
-        </div>
-      </HomeContainer>
+        </HomeContainer>
+      </div>
     );
   }
 }

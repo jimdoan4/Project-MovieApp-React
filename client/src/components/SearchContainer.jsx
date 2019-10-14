@@ -39,7 +39,7 @@ class SearchContainer extends Component {
 
   render() {
     return (
-      <div className="SearchContainer text-center">
+      <div className="text-center">
           {
             this.state.hasSearched ?
             <Results

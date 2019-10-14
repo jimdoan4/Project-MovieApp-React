@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Card } from "react-bootstrap";
 import { Col } from "react-bootstrap";
+import { Jumbotron } from "react-bootstrap";
 
 class Results extends Component {
   constructor(props) {
@@ -21,7 +22,7 @@ class Results extends Component {
           style={{ height: "450px" }}
           className="Results_item order-section container-fluid"
         >
-          <Card className="ordering" style={{ height: "380px" }}>
+          <Card style={{ height: "380px", width:"305px" }}>
             <div className="icon-container">
               <img
                 className="Results_item_images order-picture"
@@ -34,15 +35,15 @@ class Results extends Component {
                 <div className="dropdown">
                   <span className="info-button">Click here for more information</span>
                   <div className="dropdown-content text-center">
-                    <h4 className="Results_item_title card-title">
+                    <Card.Title className="Results_item_title">
                       Title: <br/>  {show.name}
-                    </h4>
-                    <h4 className="Results_item_title card-title">
+                    </Card.Title>
+                    <Card.Title className="Results_item_title">
                       Genre: <br/> {show.genres}
-                    </h4>
-                    <h4 className="Results_item_title card-title">
+                    </Card.Title>
+                    <Card.Title className="Results_item_title">
                       Rating: <br/> {show.rating}
-                    </h4>
+                    </Card.Title>
                   </div>
                 </div>
               </Card.Body>
@@ -53,7 +54,7 @@ class Results extends Component {
     });
 
     return (
-      <div className="jumbotron">
+      <Jumbotron>
         <button
           className="back-button"
           onClick={this.onSearchAgain}
@@ -62,7 +63,7 @@ class Results extends Component {
           BACK TO SEARCH
         </button>
         <div className="Results">{results}</div>
-      </div>
+      </Jumbotron>
     );
   }
 }
