@@ -102,7 +102,7 @@ class App extends Component {
                 <Col md={3}>
                     <img
                       src="https://redtricom.files.wordpress.com/2017/05/ugly-dolls.jpg?w=605"
-                      alt="Support"
+                      alt="Supports"
                       className="img-fluid"
                     />
                 </Col>
