@@ -22,18 +22,17 @@ class Search extends Component {
         <div id="search-container">
           <form onSubmit={this.onSubmitQuery}>
             <input
-              className="search-btn text-center"
+              className="search-btn bg-light text-dark text-center font-weight-bold"
               type="text"
               placeholder="Search a movie"
               value={this.props.query}
               onChange={this.handleSearchInput}
             />
-            <button type="submit" className="text-center back-button">
+            <button type="submit" className="text-center look-button ml-4 bg-dark text-light"l>
               {" "}
               <i
-                className="fa fa-search"
+                className="fa fa-search lead"
                 aria-hidden="true"
-                style={{ fontSize: "20px" }}
               ></i>
             </button>
           </form>

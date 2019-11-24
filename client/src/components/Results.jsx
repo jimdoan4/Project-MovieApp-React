@@ -15,39 +15,34 @@ class Results extends Component {
 
   render() {
     let { shows } = this.props;
-    let results = shows.map((show, index) => {  // Looping through the list of items to show all of the shows requested
+    let results = shows.map((show, index) => {
+      // Looping through the list of items to show all of the shows requested
       return (
-        <Col md={3}
+        <Col
+          md={3}
           key={index}
-          style={{ height: "450px" }}
-          className="Results_item order-section container-fluid"
+          className="Results_item order-section container mb-4"
         >
-          <Card style={{ height: "380px", width:"305px" }}>
-            <div className="icon-container">
-              <img
-                className="Results_item_images order-picture"
-                src={show.image}
-                alt={show.name}
-                width="303px"
-                height="280px"
-              />
-              <Card.Body>
-                <div className="dropdown">
-                  <span className="info-button">Click here for more information</span>
-                  <div className="dropdown-content text-center">
-                    <Card.Title className="Results_item_title">
-                      Title: <br/>  {show.name}
-                    </Card.Title>
-                    <Card.Title className="Results_item_title">
-                      Genre: <br/> {show.genres}
-                    </Card.Title>
-                    <Card.Title className="Results_item_title">
-                      Rating: <br/> {show.rating}
-                    </Card.Title>
-                  </div>
+          <Card>
+            <img className="img-fluid" src={show.image} alt={show.name} />
+            <Card.Body>
+              <div className="dropdown justify-content-center">
+                <span className="info-button bg-dark text-light">
+                  view movie details
+                </span>
+                <div className="dropdown-content text-left">
+                  <Card.Title className="Results_item_title">
+                    <span>Title:</span> {show.name}
+                  </Card.Title>
+                  <Card.Title className="Results_item_title">
+                    <span>Genre:</span> {show.genres}
+                  </Card.Title>
+                  <Card.Title className="Results_item_title">
+                    <span>Rating:</span> {show.rating}
+                  </Card.Title>
                 </div>
-              </Card.Body>
-            </div>
+              </div>
+            </Card.Body>
           </Card>
         </Col>
       );
@@ -56,9 +51,8 @@ class Results extends Component {
     return (
       <Jumbotron>
         <button
-          className="back-button"
+          className="back-button mb-5 font-weight-bold bg-dark text-light"
           onClick={this.onSearchAgain}
-          style={{ marginBottom: "55px", fontWeight:"bold" }}
         >
           BACK TO SEARCH
         </button>

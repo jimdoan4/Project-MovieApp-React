@@ -20,8 +20,6 @@ body {
   --mainTransition: all 0.3s linear;
 }
 
-
-
 /*************************** MAIN HOME PAGE **********************/
 .main-header {
   min-height: calc(100vh - 120px);
@@ -31,84 +29,41 @@ body {
   justify-content: center;
 }
 
-.card {
-  border: 1px transparent solid;
-  color: black;
-  height: 330px;
-  box-shadow: 2px 3px 3px 2px #b3b3b3;
-}
-
-.card:hover {
-  color: black;
-  background: #e36056;
-  height: 330px;
-  box-shadow: 2px 3px 3px 2px #e36056;
-}
-
-
 #page-container {
   position: relative;
-  min-height: 10vh;
+  height: 10vh;
 }
 
-
-.card-title {
-  font-size: 15.5px !important;
-}
-
-.title {
-  font-weight: bold !important;
-  text-decoration: underline !important;
-  font-size: 18px !important;
-}
-
+/*************************** END OF MAIN HOME PAGE **********************/
 
 /*************************** ALL BUTTONS **********************/
-.banner-btn {
-  padding: 1.5rem 4.7rem;
-  text-transform: uppercase;
-  letter-spacing: var(--mainSpacing);
-  font-size: 1.5rem;
-  font-weight: bold;
-  background: var(--primaryColor);
-  color: var(--mainBlack);
-  border: 1px solid var(--primaryColor);
-  transition: var(--mainTransition);
-  cursor: pointer;
-  border-radius: 24px;
-  margin-top: 90px;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
-  box-shadow: 1px 1px 1px 1px white;
-}
-
-.banner-btn:hover {
-  background: #e36056;
-  color: white;
-  border: 1px solid #e36056;
-}
-
 .back-button {
-  background-color: white;
-  color: black;
   border: 2px solid black !important;
-  justify-content: center;
-  padding-top: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 5px;
-  border-radius: 3px;
-  margin-left: 30px;
+  padding-top: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  border-radius: 4px;
+  letter-spacing: 1.3px;
 }
 
 .back-button:hover {
-  background-color: #e36056;
+  background-color: #e36056 !important;
   color: white;
   box-shadow: 1px 3px 12px 0px #b3b3b3;
 }
 
+.look-button {
+  border: 2px solid black !important;
+  padding-top: 10.5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10.5px;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
 .info-button {
-  background-color: white;
-  color: black;
   border: 2px solid black !important;
   justify-content: center;
   padding-top: 10px;
@@ -117,31 +72,33 @@ body {
   padding-bottom: 10px;
   border-radius: 5px;
   margin-top: 30px !important;
-  font-size: 14px;
+  font-size: 15px;
+  text-transform: uppercase;
 }
 
 .info-button:hover {
-  background-color: #363130;
-  color: white;
   box-shadow: 1px 3px 12px 0px #b3b3b3;
+}
 
+/*************************** END OF ALL BUTTONS SECTION **********************/
+
+/*************************** SEARCH CONTAINER **********************/
+#search-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
 }
 
 .search-btn {
-  padding: .2rem .1rem;
+  padding: 10px 15px;
   border: 2px solid black !important;
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
-  font-size: 1.4rem;
-  font-weight: bold;
-  background: var(--primaryColor);
-  color: var(--mainBlack);
-  border: 1px solid var(--primaryColor);
+  font-size: 18px;
   transition: var(--mainTransition);
   cursor: pointer;
-  border-radius: 3px;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
-  margin-bottom: 40px;
+  border-radius: 4px;
 }
 
 .dropdown {
@@ -153,7 +110,7 @@ body {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  width: 240px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
@@ -163,43 +120,50 @@ body {
   display: block;
 }
 
-
-#search-container {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
-}
+/*************************** END OF SEARCH SECTION **********************/
 
 /*************************** RESULTS SECTION **********************/
+.card {
+  border: 1px transparent solid;
+  color: black;
+  height: 390px;
+  width: 300px;
+  box-shadow: 2px 3px 3px 2px #b3b3b3;
+}
+
+.card img {
+  height: 350px !important;
+  width: 300px !important;
+  box-shadow: 1px 3px 12px 0px #b3b3b3;
+}
+
+.card img:hover {
+  opacity: .8;
+  background-color: black;
+}
+
 .Results {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.Results_item {
-  width: 240px;
-}
-
-.Results_item_image {
-  height: 200px;
+  flex-flow: row wrap;
 }
 
 .Results_item_title {
-  white-space: wrap;
+  font-size: 15px !important;
 }
 
-.Results_item_summary {
-  white-space: wrap;
+.card-title span {
+  font-weight: bold;
+  text-transform: uppercase;
 }
+
+/*************************** END OF RESULTS SECTION **********************/
 
 /**************************** MEDIA-QUERY ***************************/
 @media only screen and (max-width: 414px) {
-  .card {
-    border: 1px transparent solid;
-    color: black;
-    height: 330px !important;
-    box-shadow: 2px 3px 3px 2px #b3b3b3;
+  .card img {
+    height: 350px !important;
+    width: 340px;
+    box-shadow: 1px 3px 12px 0px #b3b3b3;
   }
 
   .info-button {
@@ -226,11 +190,6 @@ body {
     border-radius: 3px;
   }
 
-  .order-picture {
-    width: 209px;
-    height: 240px;
-  }
-
   .nav-link {
     font-size: 22px !important;
   }
@@ -240,113 +199,112 @@ body {
   }
 
   .search-btn {
-    padding: .2rem .1rem;
+    padding: 10px 15px;
     border: 2px solid black !important;
     text-transform: uppercase;
     letter-spacing: var(--mainSpacing);
-    font-size: 1.1rem;
-    font-weight: bold;
-    background: var(--primaryColor);
-    color: var(--mainBlack);
-    border: 1px solid var(--primaryColor);
+    font-size: 18px;
     transition: var(--mainTransition);
     cursor: pointer;
-    border-radius: 3px;
-    font-family: "OpenSans", Helvetica, Arial, sans-serif;
-    margin-bottom: 40px;
+    border-radius: 4px;
   }
 
   .card-title {
     font-size: 11px !important;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 190px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
   }
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  #page-container {
+    position: relative;
+    height: 6vh;
+  }
+
   .card {
     border: 1px transparent solid;
     color: black;
-    height: 300px;
+    height: 350px;
+    width: 210px;
     box-shadow: 2px 3px 3px 2px #b3b3b3;
   }
 
-  .card:hover {
-    color: black;
-    background: #e36056;
-    height: 330px;
-    box-shadow: 2px 3px 3px 2px #e36056;
+  .card img {
+    height: 320px !important;
+    width: 210px !important;
+    box-shadow: 1px 3px 12px 0px #b3b3b3;
   }
 
   .info-button {
-    background-color: white;
-    color: black;
-    border: 2px solid black !important;
-    justify-content: center;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 5px;
     margin-top: 30px !important;
-    font-size: 13px;
+    font-size: 11px;
+    border: 2px solid black !important;
+    justify-content: center;
+    margin-top: 30px !important;
+    text-transform: uppercase;
   }
 
   .info-button:hover {
-    background-color: #363130;
-    color: white;
+    background-color: white;
+    color: black;
     box-shadow: 1px 3px 12px 0px #b3b3b3;
 
   }
 
-  .order-picture {
-    width: 209px;
-    height: 240px;
-  }
-
-  .info-button {
-    background-color: white;
-    color: black;
-    border: 2px solid black !important;
-    justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 5px;
-    margin-top: 30px !important;
-    font-size: 9px;
-  }
-
   .search-btn {
-    padding: .2rem .1rem;
+    padding: 20px 25px;
     border: 2px solid black !important;
     text-transform: uppercase;
     letter-spacing: var(--mainSpacing);
-    font-size: 1.9rem;
-    font-weight: bold;
-    background: var(--primaryColor);
-    color: var(--mainBlack);
-    border: 1px solid var(--primaryColor);
+    font-size: 18px;
     transition: var(--mainTransition);
     cursor: pointer;
-    border-radius: 3px;
-    font-family: "OpenSans", Helvetica, Arial, sans-serif;
-    margin-bottom: 40px;
+    border-radius: 4px;
+  }
+
+  .look-button {
+    border: 2px solid black !important;
+    padding-top: 20.5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20.5px;
+    border-radius: 4px;
+    font-size: 18px;
   }
 
   .back-button {
-    background-color: white;
-    color: black;
     border: 2px solid black !important;
-    justify-content: center;
     padding-top: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 6px;
-    border-radius: 3px;
-    font-size: 1.3rem;
-  }
-
-  .card {
-    height: 350px !important;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 15px;
+    border-radius: 4px;
+    letter-spacing: 1.3px;
   }
 
   .card-title {
     font-size: 11px !important;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
   }
 }
