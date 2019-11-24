@@ -110,7 +110,7 @@ class App extends Component {
                 <Col md={3}>
                     <img
                       src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-kids-movies-2019-toy-story-4-1555083312.jpg"
-                      alt="Encourage"
+                      alt="Encourages"
                       className="img-fluid"
                     />
                 </Col>
