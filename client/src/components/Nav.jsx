@@ -60,7 +60,7 @@ export default class Nav extends Component {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto center-nav-links">
             <li className="nav-item">
-              <a className="nav-link btn">
+              <a className="nav-link btn wow bounceInUp" data-wow-delay="0.2s">
                 IT'S POPCORN TIME!
                 &nbsp;
               <i className="fa fa-film" aria-hidden="true"></i>

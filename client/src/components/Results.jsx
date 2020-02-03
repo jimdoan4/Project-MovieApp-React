@@ -21,7 +21,7 @@ class Results extends Component {
         <Col
           md={3}
           key={index}
-          className="Results_item order-section container mb-4"
+          className="Results_item container text-center mb-4"
         >
           <Card>
             <img className="img-fluid" src={show.image} alt={show.name} />
@@ -56,7 +56,7 @@ class Results extends Component {
         >
           BACK TO SEARCH
         </button>
-        <div className="Results">{results}</div>
+        <div className="Results text-center">{results}</div>
       </Jumbotron>
     );
   }

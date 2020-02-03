@@ -51,7 +51,7 @@ class App extends Component {
             <Container className="text-center">
               <h4 className="section-title">New & Trending Videos</h4>
 
-              <Row>
+              <Row className="wow bounceInUp" data-wow-delay="0.3s">
                 <Col md={3}>
                     <img
                       src="http://www.thebrokaw.com/uploads/8/6/7/3/86738218/published/dora-version-3_1.jpg?1566406566"
@@ -90,7 +90,7 @@ class App extends Component {
           <div className="kids-section m-4">
             <Container className="text-center">
               <h4 className="section-title">Kids Movies</h4>
-              <Row>
+              <Row className="wow bounceInUp" data-wow-delay="0.5s">
                 <Col md={3}>
                     <img
                       src="https://www.todaysparent.com/wp-content/uploads/2018/04/best-kids-movies-us-netflix-charlie-and-the-chocolate-factory.jpg"
@@ -130,7 +130,7 @@ class App extends Component {
             <Container className="text-center">
               <h4 className="section-title">New & Trending Videos</h4>
 
-              <Row>
+              <Row className="wow bounceInUp" data-wow-delay="0.7s">
                 <Col md={3}>
                     <img
                       src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/kids-movies-2019-the-kid-who-would-be-king-1543259868.jpg?crop=0.9876543209876543xw:1xh;center,top&resize=480:*"
@@ -170,7 +170,7 @@ class App extends Component {
             <Container className="text-center">
               <h4 className="section-title">Scary & Suspense Videos</h4>
 
-              <Row>
+              <Row className="wow bounceInUp" data-wow-delay=".9s">
                 <Col md={3}>
                     <img
                       src="https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Movie_poster_for_%22Scary_Movie%22.jpg/220px-Movie_poster_for_%22Scary_Movie%22.jpg"
